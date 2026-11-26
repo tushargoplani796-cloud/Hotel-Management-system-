@@ -1,0 +1,24 @@
+root{--bg:#f1f4f9;--card:#fff;--txt:#222;--nav:#1b2a49;--line:#e3e7ef;--mut:#556}
+@media(prefers-color-scheme:dark){:root{--bg:#12161f;--card:#1c2230;--txt:#e8ecf5;--line:#2c3447;--mut:#9aa6c0}}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--txt)}
+nav{display:flex;align-items:center;background:var(--nav);flex-wrap:wrap;padding:0 8px}
+nav b{color:#fff;padding:12px;font-size:16px}nav a{color:#cfd8ea;padding:12px 11px;cursor:pointer;font-size:14px}
+nav a.on,nav a:hover{background:#2f4575;color:#fff}.sp{flex:1}
+main{max-width:1100px;margin:16px auto;padding:0 12px}h2{margin:0 0 12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px}
+.card,.box{background:var(--card);border-radius:10px;padding:14px;box-shadow:0 2px 8px #0002}
+.card{border-left:5px solid #3b6fd4}.card b{display:block;font-size:24px;margin-top:4px}
+.card.g{border-color:#2e9e5b}.card.r{border-color:#d9534f}.card.y{border-color:#e0a21a}.box{margin-bottom:16px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}th{background:var(--nav);color:#fff;text-align:left}
+th,td{padding:8px;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;align-items:end}
+label{font-size:12px;color:var(--mut);display:block;margin-bottom:3px}
+input,select{width:100%;padding:9px;border:1px solid #9aa6c055;border-radius:6px;font-size:14px;background:var(--card);color:var(--txt)}
+.btn{background:#3b6fd4;color:#fff;border:0;padding:9px 14px;border-radius:6px;cursor:pointer;font-size:13px}
+.btn.g{background:#2e9e5b}.btn.r{background:#d9534f}.btn.y{background:#e0a21a}.btn.s{padding:5px 9px;font-size:12px;margin:1px}
+.badge{padding:2px 9px;border-radius:12px;font-size:11px;color:#fff;white-space:nowrap}
+.Available,.Checked-Out{background:#2e9e5b}.Occupied,.Checked-In{background:#d9534f}.Maintenance,.Cancelled{background:#888}.Booked{background:#3b6fd4}
+.msg{padding:9px 12px;border-radius:6px;margin-bottom:12px;background:#e0f5e8;color:#1c6b3a}.msg.err{background:#fde7e7;color:#a12a27}
+.login{max-width:340px;margin:70px auto;background:var(--card);padding:26px;border-radius:12px;box-shadow:0 4px 18px #0003}
+.login input{margin-bottom:12px}.invoice td,.invoice th{font-size:14px}
+@media print{nav,.noprint{display:
